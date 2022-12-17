@@ -1,0 +1,119 @@
+@font-face {
+	font-family: FoundersGrotesk;
+	src: url(fonts/FoundersGroteskWeb-Regular.woff);
+  }
+
+body{
+	background-color: #111;
+  margin: 0;
+  padding: 0;
+  font-family: FoundersGrotesk, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #181615;
+}
+header, footer{
+	background-color: white;
+	padding: 1rem;
+}
+.flexbox-container{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+}
+
+.left{
+	order: 1;
+	flex: 1;
+	background-color: #e6ded7;
+  flex-basis: auto;
+  padding-left: 2rem;
+  width: 50%;
+  overflow: auto;
+  padding-bottom:80px;
+}
+
+h1{
+	font-weight:lighter;
+	font-size:60px;
+}
+
+h3{
+	font-family: FoundersGrotesk, sans-serif;
+	font-size: 18px;
+	font-weight: lighter;
+	opacity: 80%;
+}
+
+.copy{
+	max-width:650px;
+	font-size: 30px;
+	font-family: FoundersGrotesk, sans-serif;
+	line-height:1.4em;
+	margin-bottom:100px;
+}
+
+a{
+	color:black;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.427);
+	text-decoration: none;
+}
+
+a:hover{
+	color: #BB4F02;
+}
+
+.right{
+	order: 1;
+	flex: 5;
+  	padding: .5rem;
+ 	 background-image: url("img/graycollage.jpg");
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.box1, .box2 {
+  min-height: 100%;
+	padding: 1em;
+}
+
+.list{
+	margin-top:60px;
+}
+
+ul{
+	list-style: none;
+	padding: 0px;
+	list-style-position: initial;
+	margin-bottom: 4px;
+}
+
+.list h3{
+	margin-bottom: 0px;
+}
+
+li{
+	list-style: none;
+	margin-bottom:8px;
+	font-size:22px;
+}
+
+/* mobile layout */
+@media only screen and (max-width: 1200px) {
+	.right{
+		display: none;
+	}
+	.copy{
+		font-size: 4em;
+    	max-width: 100%;
+	}
+	h3{
+		font-size: .8em;
+	}
+	li{
+		font-size: 3em;
+	}
+	ul{
+		font-size: 3em;
+	}
+}
